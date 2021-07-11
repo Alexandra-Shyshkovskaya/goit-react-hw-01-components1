@@ -1,0 +1,29 @@
+body {
+  background-color: #f1f2f3;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  line-height: 1.33;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+ul,
+h2,
+li {
+  margin: 0;
+  padding: 0;
+}
