@@ -2,6 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Statistics.module.css";
 
+const colorPicker = () => {
+  const red = Math.round(Math.random() * 255);
+  const green = Math.round(Math.random() * 255);
+  const blue = Math.round(Math.random() * 255);
+  const backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  return backgroundColor;
+};
+
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
@@ -12,10 +20,7 @@ const Statistics = ({ title, stats }) => (
           key={id}
           className={styles.item}
           style={{
-            backgroundColor: `rgb(${getRandom(0, 255)}, ${getRandom(
-              0,
-              255
-            )}, ${getRandom(0, 255)})`,
+            backgroundColor: colorPicker(),
           }}
         >
           <span className={styles.label}>{label}</span>
